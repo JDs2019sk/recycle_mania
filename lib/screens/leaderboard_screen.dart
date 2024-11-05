@@ -59,13 +59,13 @@ class LeaderboardScreen extends StatelessWidget {
             }
 
             if (!snapshot.hasData || snapshot.data!.isEmpty) {
-              return Center(
+              return const Center(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Icon(Icons.recycling, size: 64, color: Colors.white),
-                    const SizedBox(height: 16),
-                    const Text(
+                    SizedBox(height: 16),
+                    Text(
                       'Seja o primeiro herói\nda reciclagem!',
                       textAlign: TextAlign.center,
                       style: TextStyle(
